@@ -1,0 +1,6 @@
+Zone,Type,Connection_Type,Installed_MW
+East,Solar,DSO,106.60900000000001
+East,Solar,TSO,520.6
+South,Solar,DSO,22.97
+South,Solar,TSO,87
+West,Solar,DSO,9.2
