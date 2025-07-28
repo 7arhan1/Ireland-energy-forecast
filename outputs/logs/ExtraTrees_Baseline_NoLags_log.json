@@ -1,0 +1,27 @@
+{
+    "model_name": "ExtraTrees_Baseline_NoLags",
+    "target": "Wind_GWh",
+    "dataset_used": "Final_Model_Ready_Clean_Reshaped",
+    "training_samples": 144,
+    "test_samples": 36,
+    "n_features": 20,
+    "input_shape": [
+        144,
+        20
+    ],
+    "mae": 185.01,
+    "rmse": 232.7,
+    "r2_score": 0.292,
+    "training_time_sec": 0.07,
+    "inference_time_per_sample_sec": 0.002812,
+    "model_size_mb": 2.1,
+    "tuning_type": "None",
+    "system_info": {
+        "platform": "Windows",
+        "platform_version": "10.0.26100",
+        "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+        "cpu_count": 16,
+        "gpu_used": "NVIDIA GeForce RTX 2050"
+    },
+    "notes": "Baseline model using only raw features without lags or rolling mean."
+}

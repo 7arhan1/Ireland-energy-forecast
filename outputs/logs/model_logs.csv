@@ -1,0 +1,2 @@
+model_name,target,dataset_used,training_samples,test_samples,n_features,input_shape,mae,rmse,r2_score,training_time_sec,inference_time_per_sample_sec,model_size_mb,tuning_type,notes,platform,platform_version,processor,cpu_count,gpu_used
+ExtraTrees_Baseline_NoLags,Wind_GWh,Final_Model_Ready_Clean_Reshaped,144,36,20,"(144, 20)",185.01,232.7,0.292,0.07,0.005851,2.1,None,Baseline model using only raw features without lags or rolling mean.,Windows,10.0.26100,"Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",16,NVIDIA GeForce RTX 2050
