@@ -1,0 +1,5 @@
+family,model_name,display_name,mae,rmse,r2_score
+ARIMA/SARIMAX,ARIMAX_Solar_exog,ARIMAX (with exog vars),28.57,35.0,0.019
+Bayesian (PyMC),Bayesian_Linear_PyMC,Bayesian Linear (PyMC),32.48,41.71,-0.394
+DHR + ARIMA-errors,DHR_Solar_ARIMA_errors_EXOG_persistence,DHR + exog_1,8.26,11.42,0.896
+NGBoost,NGBoost_Solar,NGBoost (full features),24.06,30.09,0.275

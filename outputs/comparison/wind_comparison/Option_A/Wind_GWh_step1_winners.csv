@@ -1,0 +1,4 @@
+model_name,display_name,family,target,mae,rmse,r2_score,ci_coverage_pct,mean_ci_width,model_size_mb,training_time_sec,inference_time_per_sample_sec,dataset_used,notes
+NGBoost_Wind,NGBoost (full features),NGBoost,Wind_GWh,102.06,122.51,0.789,,,1.81,108.65,0.064581,Final_Wind_Data_Model,Bayesian tuning with 25 iterations
+SARIMAX_lagged_exog,SARIMAX (with lagged exog),ARIMA/SARIMAX,Wind_GWh,112.23,135.36,0.723,,,22.43,1.21,0.006913,Final_Wind_Data_Model,"order=(2, 1, 2), seasonal_order=(0, 1, 1, 12); exog(with lags)=['Wind_Speed_10m', 'Temperature_Celsius', 'Wind_Capacity_MW', 'Wind_Speed_10m_L1', 'Wind_Speed_10m_L2', 'Wind_Speed_10m_L12', 'Temperature_Celsius_L1', 'Temperature_Celsius_L12', 'Wind_Capacity_MW_L1']"
+ExtraTreesRegressor,Extra Trees (enhanced),Extra Trees,Wind_GWh,109.23,134.73,0.745,,,7.81,6.22,0.042095,Final_Wind_Data_Model.csv,"Trained on lag and rolling mean features (chronological split, no leakage)"

@@ -1,0 +1,9 @@
+model_name,display_name,family,mae,rmse,ci_coverage_pct,imp_mae,imp_rmse,imp_ci,overall_percent
+SARIMAX_no_exog,SARIMAX (no exogenous vars),ARIMA/SARIMAX,148.25,180.77,,5,5,,5
+SARIMAX_lagged_exog,SARIMAX (with lagged exog),ARIMA/SARIMAX,112.23,135.36,,77.98224724,77.94370065,,77.9668286
+ARIMAX_exog,ARIMAX (with exog vars),ARIMA/SARIMAX,127.32,156.71,,45.31283828,41.29763131,,43.70675549
+ExtraTreesRegressor,Extra Trees (enhanced),Extra Trees,109.23,134.73,,84.47715956,79.02506008,,82.29631977
+ExtraTrees_Wind_Baseline,Extra Trees (baseline),Extra Trees,137.97,171.52,,22.25589955,15.87710264,,19.70438078
+NGBoost_Wind,NGBoost (full features),NGBoost,102.06,122.51,,95,95,,95
+NGBoost_Wind_Pruned_1,NGBoost (pruned features),NGBoost,111.26,133.53,31.03448276,80.08226889,81.08479231,5,65.36657214
+NGBoost_Wind_Simplified,NGBoost (simplified input),NGBoost,116.68,135.34,62.06896552,68.3481273,77.97802952,95,76.56747251

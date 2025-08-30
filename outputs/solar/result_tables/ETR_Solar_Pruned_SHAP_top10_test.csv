@@ -1,0 +1,6 @@
+feature,mean_abs_shap
+Solar_GWh_RollingMean3,5.757513896204148
+Solar_Capacity_MW,5.239230177287475
+Solar_GWh_Lag1,4.860982472147602
+Solar_GWh_Lag2,2.2160011323719506
+Solar_Radiation_MJ_per_m2,1.9123118156775984

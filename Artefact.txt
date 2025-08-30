@@ -1,0 +1,4 @@
+Artefact.txt – Ireland Energy Forecast Dissertation Project
+
+For full project details, datasets, models, outputs, and scripts, please see the README.md 
+or visit the GitHub repository: https://github.com/7arhan1/Ireland-energy-forecast.git

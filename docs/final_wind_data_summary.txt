@@ -1,0 +1,97 @@
+# Wind Data Summary Log 
+
+ 1. Dataset Shape & First Rows
+Shape: (168, 10)
+         Date  Wind_GWh  Wind_GWh_Lag1  Wind_GWh_Lag2  Wind_GWh_Lag12  Wind_GWh_RollingMean3  Wind_Speed_10m  Temperature_Celsius  Cloud_Cover  Wind_Capacity_MW
+0  01-01-2011   274.802        218.840        341.232         248.002             278.291333        1.580421             5.126502     0.716063          1443.528
+1  01-02-2011   354.989        274.802        218.840         150.952             282.877000        4.150639             7.495865     0.770891          1448.178
+2  01-03-2011   205.538        354.989        274.802         251.394             278.443000        1.315118             7.115686     0.654500          1453.278
+3  01-04-2011   245.734        205.538        354.989         186.269             268.753667        1.821847            10.619301     0.672247          1472.878
+4  01-05-2011   542.454        245.734        205.538         168.528             331.242000        4.198789            11.077496     0.730352          1485.378
+
+2. Dataset Info
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 168 entries, 0 to 167
+Data columns (total 10 columns):
+ #   Column                 Non-Null Count  Dtype  
+---  ------                 --------------  -----  
+ 0   Date                   168 non-null    object 
+ 1   Wind_GWh               168 non-null    float64
+ 2   Wind_GWh_Lag1          168 non-null    float64
+ 3   Wind_GWh_Lag2          168 non-null    float64
+ 4   Wind_GWh_Lag12         168 non-null    float64
+ 5   Wind_GWh_RollingMean3  168 non-null    float64
+ 6   Wind_Speed_10m         168 non-null    float64
+ 7   Temperature_Celsius    168 non-null    float64
+ 8   Cloud_Cover            168 non-null    float64
+ 9   Wind_Capacity_MW       168 non-null    float64
+dtypes: float64(9), object(1)
+memory usage: 13.3+ KB
+
+Missing Values 
+Date                     0
+Wind_GWh                 0
+Wind_GWh_Lag1            0
+Wind_GWh_Lag2            0
+Wind_GWh_Lag12           0
+Wind_GWh_RollingMean3    0
+Wind_Speed_10m           0
+Temperature_Celsius      0
+Cloud_Cover              0
+Wind_Capacity_MW         0
+
+3. Descriptive Statistics
+          Wind_GWh  Wind_GWh_Lag1  Wind_GWh_Lag2  Wind_GWh_Lag12  Wind_GWh_RollingMean3  Wind_Speed_10m  Temperature_Celsius  Cloud_Cover  Wind_Capacity_MW
+count   168.000000     168.000000     168.000000      168.000000             168.000000      168.000000           168.000000   168.000000        168.000000
+mean    666.527071     659.978994     656.726720      615.575113             661.077595        2.877818            10.548721     0.741414       3197.797577
+std     318.321053     316.127699     316.582023      319.397592             288.260891        1.460528             3.181354     0.058585       1151.134291
+min     140.312000     140.312000     140.312000      140.312000             205.816667        0.459770             4.564141     0.525614       1443.528000
+25%     429.904750     423.098000     415.138750      361.925000             424.729750        1.758431             7.695368     0.711529       2135.162000
+50%     591.324000     588.258000     587.290500      546.416500             635.256167        2.601266             9.974626     0.744763       3318.649000
+75%     879.791500     859.885250     853.405750      793.323750             872.954833        3.787950            13.416981     0.781644       4332.811000
+max    1537.470000    1537.470000    1537.470000     1537.470000            1292.148000        7.313563            16.678295     0.893707       4934.091000
+
+4. Unique Values Per Column
+Date: 168 unique
+Wind_GWh: 168 unique
+Wind_GWh_Lag1: 168 unique
+Wind_GWh_Lag2: 168 unique
+Wind_GWh_Lag12: 168 unique
+Wind_GWh_RollingMean3: 168 unique
+Wind_Speed_10m: 168 unique
+Temperature_Celsius: 168 unique
+Cloud_Cover: 168 unique
+Wind_Capacity_MW: 117 unique
+
+
+5. Date Column Check
+No 'Month' or 'Date' column found.
+
+6. Correlation Matrix (Top 10x10)
+                       Wind_GWh  Wind_GWh_Lag1  Wind_GWh_Lag2  Wind_GWh_Lag12  Wind_GWh_RollingMean3  Wind_Speed_10m  Temperature_Celsius  Cloud_Cover  Wind_Capacity_MW
+Wind_GWh               1.000000       0.781533       0.654376        0.827667               0.893345        0.418835            -0.378898     0.225230          0.727168
+Wind_GWh_Lag1          0.781533       1.000000       0.785265        0.766719               0.940707        0.077682            -0.430856     0.018425          0.725441
+Wind_GWh_Lag2          0.654376       0.785265       1.000000        0.667895               0.894014       -0.089727            -0.337517    -0.092488          0.725527
+Wind_GWh_Lag12         0.827667       0.766719       0.667895        1.000000               0.829444        0.151132            -0.340454     0.136845          0.755339
+Wind_GWh_RollingMean3  0.893345       0.940707       0.894014        0.829444               1.000000        0.149720            -0.420532     0.055783          0.798459
+Wind_Speed_10m         0.418835       0.077682      -0.089727        0.151132               0.149720        1.000000            -0.289169     0.449747         -0.091260
+Temperature_Celsius   -0.378898      -0.430856      -0.337517       -0.340454              -0.420532       -0.289169             1.000000     0.002399          0.086411
+Cloud_Cover            0.225230       0.018425      -0.092488        0.136845               0.055783        0.449747             0.002399     1.000000          0.010951
+Wind_Capacity_MW       0.727168       0.725441       0.725527        0.755339               0.798459       -0.091260             0.086411     0.010951          1.000000
+
+7. Target Column Summary: Wind_GWh
+count     168.000000
+mean      666.527071
+std       318.321053
+min       140.312000
+25%       429.904750
+50%       591.324000
+75%       879.791500
+max      1537.470000
+
+8. Full Column List
+Wind_GWh, Wind_GWh_Lag1, Wind_GWh_Lag2, Wind_GWh_Lag12, Wind_GWh_RollingMean3, Wind_Speed_10m, Temperature_Celsius, Cloud_Cover, Wind_Capacity_MW
+
+8. Full Column List
+Wind_GWh, Wind_GWh_Lag1, Wind_GWh_Lag2, Wind_GWh_Lag12, Wind_GWh_RollingMean3, Wind_Speed_10m, Temperature_Celsius, Cloud_Cover, Wind_Capacity_MW
+

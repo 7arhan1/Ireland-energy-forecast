@@ -1,0 +1,8 @@
+feature,mean_abs_shap
+Wind_GWh_RollingMean3,141.46790617087936
+Wind_GWh_Lag12,79.43800207315907
+Wind_Speed_10m,56.5184361587212
+Wind_GWh_Lag1,41.229271367471455
+Wind_Capacity_MW,37.50372565659354
+month_sin,0.0
+month_cos,0.0

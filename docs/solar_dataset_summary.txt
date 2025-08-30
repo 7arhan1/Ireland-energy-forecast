@@ -1,0 +1,112 @@
+#Final solar dataset summary
+File Path: C:\Projects\GitHub\Ireland-energy-forecast\data\processed\Final_Solar_Data_Model.csv
+Shape: 168 rows × 10 columns
+
+Columns:
+Date, Solar_GWh, Solar_GWh_Lag1, Solar_GWh_Lag2, Solar_GWh_Lag12, Solar_GWh_RollingMean3, Solar_Radiation_MJ_per_m2, Temperature_Celsius, Cloud_Cover, Solar_Capacity_MW
+
+#DATA TYPES
+Date                          object
+Solar_GWh                    float64
+Solar_GWh_Lag1               float64
+Solar_GWh_Lag2               float64
+Solar_GWh_Lag12              float64
+Solar_GWh_RollingMean3       float64
+Solar_Radiation_MJ_per_m2    float64
+Temperature_Celsius          float64
+Cloud_Cover                  float64
+Solar_Capacity_MW            float64
+dtype: object
+
+ #MISSING VALUES (per column) 
+Date                         0
+Solar_GWh                    0
+Solar_GWh_Lag1               0
+Solar_GWh_Lag2               0
+Solar_GWh_Lag12              0
+Solar_GWh_RollingMean3       0
+Solar_Radiation_MJ_per_m2    0
+Temperature_Celsius          0
+Cloud_Cover                  0
+Solar_Capacity_MW            0
+dtype: int64
+
+#BASIC STATISTICS
+        Solar_GWh  Solar_GWh_Lag1  Solar_GWh_Lag2  Solar_GWh_Lag12  \
+count  168.000000      168.000000      168.000000       168.000000   
+mean     6.772012        6.675452        6.534905         2.524643   
+std     20.383863       20.377251       20.341133        10.555658   
+min      0.000000        0.000000        0.000000         0.000000   
+25%      0.000000        0.000000        0.000000         0.000000   
+50%      0.000000        0.000000        0.000000         0.000000   
+75%      0.000000        0.000000        0.000000         0.000000   
+max    115.457000      115.457000      115.457000        63.954000   
+
+       Solar_GWh_RollingMean3  Solar_Radiation_MJ_per_m2  Temperature_Celsius  \
+count              168.000000               1.680000e+02           168.000000   
+mean                 6.660790               1.014463e+07            10.548721   
+std                 19.803082               6.235185e+06             3.181354   
+min                  0.000000               1.540266e+06             4.564141   
+25%                  0.000000               3.743720e+06             7.695368   
+50%                  0.000000               9.780964e+06             9.974626   
+75%                  0.000000               1.628134e+07            13.416981   
+max                104.939667               2.150320e+07            16.678295   
+
+       Cloud_Cover  Solar_Capacity_MW  
+count   168.000000         168.000000  
+mean      0.741414          64.771429  
+std       0.058585         118.010937  
+min       0.525614           0.000000  
+25%       0.711529           1.000000  
+50%       0.744763          10.400000  
+75%       0.781644          89.900000  
+max       0.893707         445.200000  
+
+#SAMPLE DATA (first 5 rows)
+         Date  Solar_GWh  Solar_GWh_Lag1  Solar_GWh_Lag2  Solar_GWh_Lag12  \
+0  2011-01-01        0.0             0.0             0.0              0.0   
+1  2011-02-01        0.0             0.0             0.0              0.0   
+2  2011-03-01        0.0             0.0             0.0              0.0   
+3  2011-04-01        0.0             0.0             0.0              0.0   
+4  2011-05-01        0.0             0.0             0.0              0.0   
+
+   Solar_GWh_RollingMean3  Solar_Radiation_MJ_per_m2  Temperature_Celsius  \
+0                     0.0                  2722785.5             5.126502   
+1                     0.0                  4892891.0             7.495865   
+2                     0.0                 10031971.0             7.115686   
+3                     0.0                 15662278.0            10.619301   
+4                     0.0                 17387700.0            11.077496   
+
+   Cloud_Cover  Solar_Capacity_MW  
+0     0.716063                0.7  
+1     0.770891                0.7  
+2     0.654500                0.7  
+3     0.672247                0.7  
+4     0.730352                0.7  
+
+#UNIQUE VALUES COUNT (per column)
+Date                         168
+Solar_GWh                     30
+Solar_GWh_Lag1                29
+Solar_GWh_Lag2                28
+Solar_GWh_Lag12               18
+Solar_GWh_RollingMean3        30
+Solar_Radiation_MJ_per_m2    168
+Temperature_Celsius          168
+Cloud_Cover                  168
+Solar_Capacity_MW             13
+dtype: int64
+
+# MEMORY USAGE
+Index                         132
+Date                         9912
+Solar_GWh                    1344
+Solar_GWh_Lag1               1344
+Solar_GWh_Lag2               1344
+Solar_GWh_Lag12              1344
+Solar_GWh_RollingMean3       1344
+Solar_Radiation_MJ_per_m2    1344
+Temperature_Celsius          1344
+Cloud_Cover                  1344
+Solar_Capacity_MW            1344
+dtype: int64

@@ -1,0 +1,4 @@
+variant,ci_coverage_pct,mean_ci_width
+NGBoost (full features),14.705882352941178,48.94994622058824
+NGBoost (pruned features),31.03448275862069,143.10566466266806
+NGBoost (simplified input),62.06896551724138,299.35899667241375
