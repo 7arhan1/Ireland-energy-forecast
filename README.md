@@ -32,6 +32,7 @@ This repository contains all code, datasets, models, and outputs for the MSc dis
 --
 ## folder structure
 
+```text
 Ireland-energy-forecast/
 │
 ├── data/
